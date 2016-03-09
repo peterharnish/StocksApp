@@ -1,6 +1,6 @@
 # StocksApp
 The stocks app is a WinForms application using .NET 4.0. It uses the Repository pattern to communicate with data storage. To generate a SQL Server database, execute the script given at peterharnish/CashFlowApp.
-The stocks app keeps track of Positions, Purchases, Sales, and Dividends. 
+The stocks app keeps track of Positions, Purchases, Sales, and Dividends for a given stock portfolio. 
 The stocks app has 2 modes, Current and History. The form opens to Current. It displays a data grid view with current positions, giving the Symbol, Current Price, High, Target Sale Price, Date Opened, Stop, Total Invested, Total Shares Owned, Total Dividends, and Total R. The final row displays totals.
 To insert a Position, right-click on the data grid view and select Purchases. The Purchases dialog box opens up. Enter the Symbol, Total Price, Number of Shares, and Stop. Today's date is inserted automatically. Then click OK and the Purchase is saved. R, or Risk, is computed as Total Price * (1 - Stop). 
 Hard stops are used. The target sale price is calculated when inserting a position and the formula is (Purchase Price - R) / Number of Shares
