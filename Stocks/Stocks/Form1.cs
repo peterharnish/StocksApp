@@ -96,8 +96,8 @@ namespace Stocks
             LogHelper.LogInfo("Entering Form1.SetDates.");
 
             this.dtpStart.MaxDate = DateTime.Now;
-            this.dtpEndDate.MaxDate = DateTime.Now;
             this.dtpEndDate.Value = DateTime.Now;
+            this.dtpEndDate.MaxDate = DateTime.Now;
             this.dtpStart.Value = new DateTime(DateTime.Now.Year, 1, 1);
 
             LogHelper.LogInfo("Exiting Form1.SetDates.");
